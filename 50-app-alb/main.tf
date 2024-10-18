@@ -6,6 +6,7 @@ module "alb" {
   subnets               = local.private_subnet_ids
   security_groups       = [local.app_alb_sg_id]
   create_security_group = false
+  enable_deletion_protection = false  # Disable deletion protection
 
   tags = merge(
     var.common_tags,
