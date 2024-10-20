@@ -25,7 +25,7 @@ resource "aws_lb_listener" "http" {
 
     fixed_response {
       content_type = "text/html"
-      message_body = "<h1>Hello, I am from App ALB</h1>"
+      message_body = "<h1>Hello, I am from WEB ALB</h1>"
       status_code  = "200"
     }
   }
